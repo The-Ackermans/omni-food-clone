@@ -1,0 +1,40 @@
+/* keep css organized */
+/* Don't use this sheet for styling any specific components, use it's own css file */
+/* for example create a footer.css and add all the footer specific styling there */
+
+
+/* use this sheet to change the css for any styles other than component specific styles*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    display: flex;
+    min-height: 60px;
+    border: 10px solid blue;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    border: 10px solid red;
+}
+
+.main-content > section {
+    display: flex;
+    height: 400px; 
+    border: 6px solid black;
+}
+
+.footer {
+    display: flex;
+    height: 250px;
+    border: 10px solid blue;
+}
