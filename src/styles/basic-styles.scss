@@ -18,7 +18,7 @@ body {
 .header {
     display: flex;
     min-height: 60px;
-    border: 10px solid blue;
+    border: 10px solid rgb(0, 0, 0);
 }
 
 .main-content {
@@ -27,9 +27,9 @@ body {
     border: 10px solid red;
 }
 
-.main-content > section {
+.main-content>section {
     display: flex;
-    height: 400px; 
+    height: 400px;
     border: 6px solid black;
 }
 
