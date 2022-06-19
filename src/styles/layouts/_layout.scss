@@ -25,10 +25,17 @@ body {
     min-height: 80px;
     height: 80px;
     padding: 0px 25px;
+    overflow-x: hidden;
 
     // border: 2px solid rgb(0, 0, 0);
     @media (max-width: breakpoints.$mobile) {
-        background-color: blue;
+        .main-nav {
+            display: none;
+        }
+
+        .burger-menu {
+            display: flex;
+        }
     }
 }
 
@@ -36,16 +43,19 @@ body {
     display: flex;
     flex-direction: column;
     border: 10px solid red;
+    overflow-x: hidden;
 }
 
 .main-content>section {
     display: flex;
     min-height: 100px;
     border: 6px solid black;
+    overflow-x: hidden;
 }
 
 .footer {
     display: flex;
     height: 100px;
     border: 10px solid blue;
+    overflow-x: hidden;
 }
