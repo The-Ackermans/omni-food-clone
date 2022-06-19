@@ -2,6 +2,7 @@
 
 @use '../utilities/colors';
 @use '../utilities/breakpoints';
+@use '../utilities/variables';
 
 * {
     font-family: "Rubik", sans-serif;
@@ -15,6 +16,7 @@ body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    background-color: rgb(30, 30, 30);
 }
 
 .header {
@@ -24,7 +26,7 @@ body {
     background-color: colors.$background-primary;
     min-height: 80px;
     height: 80px;
-    padding: 0px 25px;
+    padding: 0 variables.$padding-at-sides;
     overflow-x: hidden;
 
     // border: 2px solid rgb(0, 0, 0);
@@ -42,20 +44,20 @@ body {
 .main-content {
     display: flex;
     flex-direction: column;
-    border: 10px solid red;
+    // border: 10px solid rgb(200, 0, 0);
     overflow-x: hidden;
 }
 
 .main-content>section {
     display: flex;
     min-height: 100px;
-    border: 6px solid black;
+    border: 3px solid seagreen;
     overflow-x: hidden;
 }
 
 .footer {
     display: flex;
     height: 100px;
-    border: 10px solid blue;
+    border: 10px solid rgb(0, 0, 200);
     overflow-x: hidden;
 }

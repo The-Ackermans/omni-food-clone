@@ -1,0 +1,25 @@
+@use '../utilities/colors';
+@use '../utilities/variables';
+@use '../utilities/breakpoints';
+
+.section-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: colors.$background-primary;
+    padding: 40px variables.$padding-at-sides 75px;
+
+
+    >section {
+        flex: 1;
+        min-height: 300px;
+        background-color: seagreen;
+    }
+
+
+    @media (max-width: breakpoints.$mobile) {
+        flex-direction: column;
+    }
+
+}
