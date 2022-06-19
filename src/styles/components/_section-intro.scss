@@ -1,11 +1,13 @@
 @use '../utilities/colors';
 @use '../utilities/variables';
 @use '../utilities/breakpoints';
+@use 'buttons';
 
 .section-intro {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     gap: 50px;
     background-color: colors.$background-primary;
     padding: 40px variables.$padding-at-sides 75px;
@@ -13,7 +15,7 @@
 
     >section {
         flex: 1;
-        min-height: 300px;
+        min-height: 100px;
         background-color: seagreen;
     }
 
@@ -22,4 +24,51 @@
         flex-direction: column;
     }
 
+}
+
+.section-intro>.left {
+    display: flex;
+    flex-direction: column;
+
+    >.clickies {
+        display: flex;
+        flex-direction: row;
+
+        >.primary-button {
+            height: 30px;
+        }
+
+        @include buttons.primary-button(colors.$button-primary, colors.$button-primary-hover, white);
+    }
+
+    >.customers {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 50px;
+        background: cyan;
+
+        .pics {
+            display: flex;
+            align-items: center;
+            height: 100%;
+            background-color: black;
+
+            >.pic {
+                background-color: white;
+                min-width: 43px;
+                height: 43px;
+                margin-right: -13px;
+                border-radius: 50%;
+            }
+
+            >.pic:last-child {
+                margin-right: 0px;
+            }
+        }
+
+        >p>span {
+            color: red;
+        }
+    }
 }
