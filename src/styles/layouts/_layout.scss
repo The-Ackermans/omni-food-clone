@@ -1,7 +1,12 @@
 /* use this sheet to change layout*/
 
+@use '../utilities/colors';
+@use '../utilities/breakpoints';
+
 * {
+    font-family: "Rubik", sans-serif;
     box-sizing: border-box;
+    color: black;
 }
 
 body {
@@ -9,12 +14,21 @@ body {
     flex-direction: column;
     margin: 0px;
     padding: 0px;
+    overflow-x: hidden;
 }
 
 .header {
     display: flex;
-    min-height: 30px;
-    border: 10px solid rgb(0, 0, 0);
+    justify-content: space-between;
+    align-items: center;
+    background-color: colors.$background-primary;
+    min-height: 80px;
+    padding: 0px 25px;
+
+    // border: 2px solid rgb(0, 0, 0);
+    @media (max-width: breakpoints.$mobile) {
+        background-color: blue;
+    }
 }
 
 .main-content {

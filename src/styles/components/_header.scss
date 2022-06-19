@@ -1,0 +1,30 @@
+// nav links in header will collapse into a burger menu when in mobile width
+
+.home-logo {
+    height: 20px;
+
+
+    >img {
+        height: 100%;
+    }
+}
+
+.main-nav {
+    display: flex;
+}
+
+.main-nav-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none;
+
+    >li {
+
+        >a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+}
