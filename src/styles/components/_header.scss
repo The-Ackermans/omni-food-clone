@@ -41,6 +41,11 @@
     }
 
     @include buttons.primary-button(colors.$button-primary, colors.$button-primary-hover, white);
+
+    .primary-button {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .burger-menu {
