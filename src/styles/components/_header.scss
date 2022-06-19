@@ -1,4 +1,6 @@
 // nav links in header will collapse into a burger menu when in mobile width
+@use 'buttons';
+@use '../utilities/colors';
 
 .home-logo {
     height: 20px;
@@ -11,15 +13,25 @@
 
 .main-nav {
     display: flex;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+    margin: 0px;
 }
 
 .main-nav-list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 30px;
+    height: 38px;
     list-style: none;
 
     >li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
 
         >a {
             text-decoration: none;
@@ -27,4 +39,6 @@
             font-weight: bold;
         }
     }
+
+    @include buttons.primary-button(colors.$button-primary, colors.$button-primary-hover, white);
 }
