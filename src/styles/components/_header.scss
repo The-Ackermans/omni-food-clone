@@ -42,3 +42,20 @@
 
     @include buttons.primary-button(colors.$button-primary, colors.$button-primary-hover, white);
 }
+
+.burger-menu {
+    display: none;
+    height: 38px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    >svg {
+        height: 100%;
+
+        >path {
+            stroke: #333;
+            stroke-width: 32px;
+        }
+    }
+}
